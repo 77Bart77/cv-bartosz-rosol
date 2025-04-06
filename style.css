@@ -1,0 +1,238 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23bcbcbc' /%3E%3C/svg%3E");
+    background-repeat: repeat;
+    color: #333;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  /* STRONA GŁÓWNA (index.html) */
+  
+  .welcome-container {
+    text-align: center;
+    margin-top: 100px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: top center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #aaa;
+  }
+  
+  .language-buttons {
+    margin-top: 20px;
+  }
+  
+  .lang-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background: #797979;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  
+  .lang-btn:hover {
+    background: #000000;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* STRONA CV (pl.html) */
+  
+  .cv-wrapper {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  .left-column {
+    flex: 2;
+    min-width: 280px;
+  }
+  
+  .right-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 4px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  .return-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .return-button a {
+    padding: 12px 25px;
+    background-color: #797979;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .return-button a:hover {
+    background-color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .cv-wrapper {
+      flex-direction: column;
+    }
+  
+    .profile-pic {
+      margin-bottom: 20px;
+    }
+  
+    .lang-btn {
+      width: 100%;
+      max-width: 250px;
+      font-size: 16px;
+    }
+  }
+  /* Nowy układ CV (pl.html) – dane + zdjęcie obok */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 40px auto 20px;
+  }
+  
+  .personal-info {
+    flex: 1;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+  }
+  
+  .footer-social {
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .footer-social .social-links {
+    margin-top: 10px;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  .footer-social a:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+  }
+  
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-photo {
+      width: 150px;
+      height: 200px;
+    }
+  }
+
+  /* Efekt hover na sekcjach */
+
+.section:hover,
+.top-section:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+  
